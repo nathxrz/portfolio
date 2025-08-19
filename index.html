@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <link
       rel="stylesheet"
@@ -46,7 +46,9 @@
         </div>
 
         <div class="header__button-theme">
-          <span class="material-symbols-outlined"> bedtime </span>
+          <div class="button-theme">
+            <span class="material-symbols-outlined dark"> bedtime </span>
+          </div>
         </div>
       </header>
       <main>
@@ -139,17 +141,19 @@
             src="./assets/images/aboutme.png"
             alt="Imagem da criadora do portfólio"
           />
-          <p>
-            Sou estudante de <strong>Sistemas para Internet</strong> e atuo como
-            estagiária na área de <strong>Suporte de TI</strong>. Possuo
-            conhecimentos em <strong>HTML</strong>, <strong>CSS</strong> e
-            <strong>JavaScript</strong>, além de já ter desenvolvido projetos
-            que compartilho no <strong>GitHub</strong>.
-          </p>
-          <p>
-            Tenho grande interesse em desenvolvimento web e busco constantemente
-            aprimorar minhas habilidades técnicas e criativas.
-          </p>
+          <div class="about__text">
+            <p>
+              Sou estudante de <strong>Sistemas para Internet</strong> e atuo
+              como estagiária na área de <strong>Suporte de TI</strong>. Possuo
+              conhecimentos em <strong>HTML</strong>, <strong>CSS</strong> e
+              <strong>JavaScript</strong>, além de já ter desenvolvido projetos
+              que compartilho no <strong>GitHub</strong>.
+            </p>
+            <p>
+              Tenho grande interesse em desenvolvimento web e busco
+              constantemente aprimorar minhas habilidades técnicas e criativas.
+            </p>
+          </div>
           <div class="about__extras">
             <span class="material-symbols-outlined"> school </span>
             <p><strong>IFSul</strong> – Sistemas para Internet (2021 – 2026)</p>
@@ -167,29 +171,22 @@
           <h2>Entre em contato</h2>
           <p>Aberta a oportunidades e colaborações!</p>
           <div class="contact__content">
-            <div class="contact__card">
-              <img
-                src="./assets/images/linkedin-icon.png"
-                alt="Ícone do LinkedIn"
-              />
-            </div>
-            <div class="contact__card">
-              <img
-                src="./assets/images/linkedin-icon.png"
-                alt="Ícone do LinkedIn"
-              />
-            </div>
-            <div class="contact__card">
-              <img
-                src="./assets/images/linkedin-icon.png"
-                alt="Ícone do LinkedIn"
-              />
-            </div>
+            <img src="./assets/images/github-icon.png" alt="Ícone do GitHub" />
+
+            <img
+              src="./assets/images/linkedin-icon.png"
+              alt="Ícone do LinkedIn"
+            />
+
+            <img
+              src="./assets/images/discord-icon.png"
+              alt="Ícone do Discord"
+            />
           </div>
         </section>
       </main>
 
-      <footer>
+      <footer class="footer">
         <p>© 2025 Todos os direitos reservados.</p>
       </footer>
     </div>
