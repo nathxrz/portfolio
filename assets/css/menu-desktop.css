@@ -1,0 +1,30 @@
+.menu-desktop {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.menu-desktop a {
+  color: #f3f3f3;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #00000000;
+  font-size: 1.8rem;
+}
+
+.menu-desktop a:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.menu-desktop a.active {
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+@media (min-width: 768px) {
+  .menu-desktop {
+    display: flex;
+  }
+}

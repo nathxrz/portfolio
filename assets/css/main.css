@@ -1,3 +1,7 @@
+.main {
+  margin: 5.4rem 0 5.3rem;
+}
+
 /* hero */
 .hero {
   color: #f3f3f3;
@@ -50,7 +54,7 @@
   color: #f3f3f3;
 }
 
-.hero__buttons a {
+.hero__buttons a:nth-child(2) {
   font-size: 1.6rem;
   color: #f3f3f3;
 
@@ -67,7 +71,7 @@
 .projects h2,
 .about h2,
 .contact h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
   color: #f3f3f3;
 }
@@ -146,6 +150,7 @@
 
 .projects__card img {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .projects__card h3,
@@ -172,6 +177,8 @@
 #projects__button {
   width: 10.6rem;
   background: linear-gradient(106.64deg, #601fa1 16.22%, #230b3b 151.22%);
+  background-size: 200%;
+  background-position: left;
   padding: 0.8rem 2.9rem;
 
   border: none;
@@ -183,11 +190,11 @@
 
   cursor: pointer;
 
-  transition: 3s;
+  transition: background-position 0.3s linear;
 }
 
 #projects__button:hover {
-  background: linear-gradient(106.64deg, #3b1264 16.22%, #230b3b 151.22%);
+  background-position: right;
 }
 
 /* about me  */
@@ -219,7 +226,7 @@
 
 .about__extras {
   display: flex;
-  align-items: initial;
+  align-items: center;
   gap: 1rem;
 
   margin-bottom: 0.8rem;
@@ -235,12 +242,162 @@
   margin-bottom: 4rem;
 }
 
-.contact__content{
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
+.contact__content {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
-.contact__content img{
-    width: 4rem
+.contact__content img {
+  width: 4rem;
+}
+
+.contact__content p {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin: 14.1rem 10rem 11rem;
+  }
+
+  /* hero */
+  .hero h1 {
+    font-size: 4.8rem;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .hero span {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1.8rem;
+
+    margin: 1.6rem 0 5.3rem;
+  }
+
+  .hero__buttons button {
+    padding: 1.3rem 2.2rem;
+
+    border-radius: 2.8rem;
+
+    font-size: 1.8rem;
+  }
+
+  .hero__buttons a {
+    font-size: 1.8rem;
+  }
+
+  /* skills */
+
+  .skills {
+    margin-top: 15.8rem;
+  }
+
+  .skills h2,
+  .projects h2,
+  .about h2,
+  .contact h2 {
+    font-size: 4rem;
+  }
+
+  .skills__content {
+    justify-content: initial;
+    gap: 5.8rem;
+  }
+
+  .skills__card {
+    gap: 2.3rem;
+
+    width: 16.2rem;
+
+    background-color: #f3f3f3;
+    padding: 3.5rem 1.4rem;
+  }
+
+  .skills__card img {
+    width: 6rem;
+  }
+
+  .skills__card span {
+    font-size: 2rem;
+  }
+
+  /* projetos */
+  .projects {
+    margin-top: 15.3rem;
+  }
+
+  .projects p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .projects__content {
+    gap: 2.5rem;
+  }
+
+  .projects__card {
+    width: 51rem;
+
+    padding: 2.3rem 1.3rem;
+  }
+
+  .projects__card h3 {
+    font-size: 2rem;
+  }
+
+  .projects__card p {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+
+  #projects__button {
+    width: 14.4rem;
+    padding: 1.3rem 4.2rem;
+
+    font-size: 1.8rem;
+  }
+
+  /* about me  */
+  .about {
+    margin-top: 14.1rem;
+  }
+
+  .about img {
+    display: block;
+    width: 53rem;
+    height: 38.6rem;
+    margin: 2rem auto;
+  }
+
+  .about__text {
+    gap: 1rem;
+  }
+
+  .about__extras {
+    margin-bottom: 1rem;
+  }
+
+  .contact {
+    margin-top: 14.6rem;
+  }
+
+  .contact__content {
+    gap: 4.4rem;
+    text-align: center;
+  }
+
+  .contact__content img {
+    width: 5rem;
+  }
+
+  .contact__content p {
+    color: #f3f3f3;
+    font-size: 1.6rem;
+
+    margin-top: 1rem;
+  }
 }

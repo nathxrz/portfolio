@@ -3,5 +3,14 @@
   color: #f3f3f39d;
   text-align: center;
 
+    font-size: 1rem;
   margin: 8.1rem 0 13rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin: 15.9rem 0 4.9rem;
+    font-size: 1.2rem;
+
+  }
 }
