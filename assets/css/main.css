@@ -45,6 +45,8 @@
   text-align: center;
   color: #601fa1;
 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   cursor: pointer;
 }
 
@@ -52,6 +54,9 @@
   background: linear-gradient(106.64deg, #3b1264 16.22%, #230b3b 151.22%);
 
   color: #f3f3f3;
+
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero__buttons a:nth-child(2) {
@@ -101,6 +106,15 @@
   border-radius: 1rem;
 
   box-shadow: 0px 4px 4px 0px #00000040;
+
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+  cursor: pointer;
+}
+
+.skills__card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .skills__card img {
   width: 4rem;
@@ -250,6 +264,13 @@
 
 .contact__content img {
   width: 4rem;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact__content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact__content p {

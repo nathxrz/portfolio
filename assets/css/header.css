@@ -1,6 +1,15 @@
 @import url(./menu-mobile.css);
 @import url(./menu-desktop.css);
 
+/* :root,
+:root[data-theme="dark"] {
+  --vars
+}
+
+:root[data-theme="light"] {
+  --vars
+} */
+
 .header {
   display: flex;
   justify-content: end;
@@ -23,6 +32,12 @@
   padding: 0.2rem 0.3rem;
 
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-theme:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .button-theme span {
