@@ -1,9 +1,21 @@
+:root[data-theme="dark"] {
+  --menu-mobile-bg: #271c40;
+  --menu-button-color: #f3f3f3;
+  --menu-button-active-bg: #201733;
+}
+
+:root[data-theme="light"] {
+  --menu-mobile-bg: #DDCFFF;
+  --menu-button-color: #371E59;
+  --menu-button-active-bg: #a18ecc;
+}
+
 .menu-mobile {
   width: 100%;
   display: flex;
   justify-content: space-between;
 
-  background-color: #271c40;
+  background-color: var(--menu-mobile-bg);
 
   position: fixed;
   bottom: 0;
@@ -23,7 +35,7 @@
 
   text-transform: uppercase;
 
-  color: #f3f3f3;
+  color: var(--menu-button-color);
 
   font-size: 1.2rem;
 }
@@ -33,7 +45,7 @@
 }
 
 .menu-mobile-button.active {
-  background-color: #201733;
+  background-color: var(--menu-button-active-bg);
 }
 
 @media (min-width: 768px) { 

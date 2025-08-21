@@ -1,3 +1,15 @@
+:root[data-theme="dark"] {
+  --menu-link-color: #f3f3f3;
+  --menu-border-color: #00000000;
+  --menu-border-hover-color: #f3f3f3;
+}
+
+:root[data-theme="light"] {
+  --menu-link-color: #371e59;
+  --menu-border-color: #00000000;
+  --menu-border-hover-color: #371e59;
+}
+
 .menu-desktop {
   display: none;
   justify-content: space-between;
@@ -6,21 +18,21 @@
 }
 
 .menu-desktop a {
-  color: #f3f3f3;
+  color: var(--menu-link-color);
   padding-bottom: 0.3rem;
-  border-bottom: 2px solid #00000000;
+  border-bottom: 2px solid var(--menu-border-color);
   font-size: 1.8rem;
 }
 
 .menu-desktop a:hover {
   padding-bottom: 0.3rem;
-  border-bottom: 2px solid #f3f3f3;
+  border-bottom: 2px solid var(--menu-border-hover-color);
 }
 
 .menu-desktop a.active {
   font-weight: bold;
   padding-bottom: 0.3rem;
-  border-bottom: 2px solid #f3f3f3;
+  border-bottom: 2px solid var(--menu-border-hover-color);
 }
 
 @media (min-width: 768px) {
