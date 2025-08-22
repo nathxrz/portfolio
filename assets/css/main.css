@@ -1,7 +1,7 @@
 :root[data-theme="dark"] {
   --text-color: #f3f3f3;
   --button-bg-color: #f3f3f3;
-  --button-tt-color: #601fa1;
+  --button-tt-color-hero: #601fa1;
   --button-bg-color-hover: linear-gradient(
     106.64deg,
     #3b1264 16.22%,
@@ -28,6 +28,7 @@
 :root[data-theme="light"] {
   --text-color: #000;
   --button-tt-color: #f3f3f3;
+  --button-tt-color-hero: #f3f3f3;
 
   --button-bg-color: linear-gradient(
     106.64deg,
@@ -35,7 +36,6 @@
     #230b3b 151.22%
   );
 
-  --button-tt-color: #f3f3f3;
 
   --button-bg-color-hover: linear-gradient(
     106.64deg,
@@ -104,7 +104,7 @@
 
   font-size: 1.6rem;
   text-align: center;
-  color: var(--button-tt-color);
+  color: var(--button-tt-color-hero);
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -340,7 +340,7 @@
 
 @media (min-width: 768px) {
   .main {
-    margin: 14.1rem 10rem 11rem;
+    margin: 10.1rem 5rem 11rem;
   }
 
   /* hero */
@@ -422,7 +422,7 @@
   }
 
   .projects__card {
-    width: 51rem;
+    min-width: 30rem;
 
     padding: 2.3rem 1.3rem;
   }
