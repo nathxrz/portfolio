@@ -69,6 +69,9 @@ O site foi construído com **HTML**, **CSS** e **JavaScript**, possui design res
 
 ---
 
+## 💻 Protótipo
+🔗 [Clique aqui para acessar](https://nathxrz.github.io/portfolio/)
+
 ## 📩 Contato
 
 - 📧 Email: nathyrezendemachado@gmail.com  
