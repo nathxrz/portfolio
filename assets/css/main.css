@@ -36,7 +36,6 @@
     #230b3b 151.22%
   );
 
-
   --button-bg-color-hover: linear-gradient(
     106.64deg,
     #3b1264 16.22%,
@@ -204,7 +203,6 @@
 
 .projects__content {
   display: flex;
-  align-items: center;
   gap: 1.6rem;
 
   flex-wrap: wrap;
@@ -223,9 +221,17 @@
   box-shadow: 0px 4px 4px 0px var(--element-shadow);
 }
 
-.projects__card img {
+.projects__card .img-card {
+  width: 25.7rem;
+  height: 13.5rem;
+}
+
+.projects__card .img-card img {
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
+
+  border: 1px solid #230b3b2d;
 }
 
 .projects__card h3,
@@ -243,13 +249,21 @@
 .projects__card p {
   font-size: 1.4rem;
   margin-bottom: 2.1rem;
+
+  text-align: justify;
 }
 
 .projects__card p a {
   color: var(--card-link-color);
 }
 
-#projects__button {
+.project-link-repository{
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.projects__button {
   width: 10.6rem;
   background: var(--card-button-bg-color);
   background-size: 200%;
@@ -261,14 +275,15 @@
 
   color: var(--button-tt-color);
   font-size: 1.4rem;
-  align-self: flex-end;
 
   cursor: pointer;
+
+  align-self: flex-end;
 
   transition: background-position 0.3s linear;
 }
 
-#projects__button:hover {
+.projects__button:hover {
   background-position: right;
 }
 
@@ -422,9 +437,17 @@
   }
 
   .projects__card {
-    min-width: 30rem;
-
+    min-width: 44rem;
     padding: 2.3rem 1.3rem;
+  }
+
+  .projects__card .img-card {
+    width: 100%;
+    height: 21.4rem;
+  }
+
+   .projects__card .img-card img{
+    object-fit: cover;
   }
 
   .projects__card h3 {
@@ -436,7 +459,7 @@
     margin-bottom: 1.6rem;
   }
 
-  #projects__button {
+  .projects__button {
     width: 14.4rem;
     padding: 1.3rem 4.2rem;
 
